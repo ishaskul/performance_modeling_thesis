@@ -1,0 +1,12 @@
+hostname,container_name,pid
+GreenLab-STF,sn_post-storage-memcached.1.dny02mm4icxr7ktv6yh1rac7m,47648
+GreenLab-STF,sn_media-frontend.1.42w4at4qqm1i4ui7kzpbe6xdk,47557
+GreenLab-STF,sn_nginx-web-server.1.ztmcmswak57yubv0piuec3d1q,47823
+GreenLab-STF,sn_user-mongodb.1.ks31xacfb9rmnxbrrblyyg05g,47368
+GreenLab-STF,sn_user-service.1.cug0clhw94v9swgpqmmbbbxbu,46974
+GreenLab-STF,sn_url-shorten-mongodb.1.540nwih15r5n9udivemgky7fv,46780
+GreenLab-STF,sn_user-timeline-redis.1.um3hsbw3d9mk5dbjc1d2oz86g,46567
+GreenLab-STF,sn_home-timeline-redis.1.rrfu01dstjx0wigcbdz5i9l7w,46655
+GreenLab-STF,sn_user-timeline-service.1.i36vh7z14s6nqoyp42meccoxy,45438
+GreenLab-STF,docker-compose-scaphandre-1,947733
+GreenLab-STF,monitoring_prometheus.1.qsirh744v3xlmo2tjly6w9x2r,179002

@@ -1,0 +1,11 @@
+hostname,container_name,pid
+GreenLab-STF,sn_post-storage-service.1.ekbiej8zb9313cdp1ocbp9amy,199931
+GreenLab-STF,sn_compose-post-service.1.i9hm21vhw3rhhu24lfp8jnyii,199552
+GreenLab-STF,sn_user-mention-service.1.qg85sdzhhyv71arhhn84fe3z1,199448
+GreenLab-STF,sn_home-timeline-redis.1.izr1n16xogdtkzqldadxzshnx,199331
+GreenLab-STF,sn_media-frontend.1.i1eee96v0ldxu8cu9j53ppr5p,199174
+GreenLab-STF,sn_unique-id-service.1.trc25v7flfb7ncw1109oi7tw8,198904
+GreenLab-STF,sn_nginx-web-server.1.404e3nkqrrito9fz9hknjjroc,198829
+GreenLab-STF,sn_jaeger-agent.1.uxq2ueonpx6a775ih9ma94k0n,198639
+GreenLab-STF,sn_user-timeline-service.1.7qv1arbtred48dyfqalqbab84,198313
+GreenLab-STF,monitoring_prometheus.1.vxl84p93iyek2rfv0nvduculp,198029
