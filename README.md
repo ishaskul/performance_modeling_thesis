@@ -56,8 +56,6 @@ This replication package is structured as follows:
 ```
 
 ### Overview of measured data is structured
-This replication package is structured as follows:
-
 ```
     /
     .
@@ -78,6 +76,29 @@ This replication package is structured as follows:
     |--- ./social-network/follow_users/follow_users_final_run/1/system_cpu_data                 Contains measured CPU utilization data per container, per server
     |--- ./social-network/follow_users/follow_users_final_run/1/power_consumption_data          Contains measured power consumption data per container, per server
     |--- ./social-network/follow_users/follow_users_final_run/transformed_data_kw_test/         Contains per server (GL2, GL5, GL6) measured data that is transformed from prometheus jsons to CSVs, and it contains KW test results csvs
+```
+
+### Overview of how data analysis scripts are structured
+
+Note : This same struture is followed for the social network app as well
+
+./social-network/compose_posts/scripts
+./social-network/follow_users/scripts
+
+```
+    /
+    .
+    |--- ./bookstore/buy_books/scripts/transform_measured_utilization_data/data_transformer.py                                                             This is the script used to transform SAR CPU Util output and Powerstat Power consumption output to CSV
+    |--- ./bookstore/buy_books/scripts/transform_measured_utilization_data/data_transformer_kw_test.py                                                     This is the script used to perform KW test on server level CPU util data across iterations
+
+    |--- ./bookstore/buy_books/scripts/transform_measured_utilization_data/get_cpu_utilization_data_per_container.py                                       This is the script used to parse prometheus CPU Util data and segeregate it, and save it into csvs per container
+    |--- ./bookstore/buy_books/scripts/transform_measured_utilization_data/get_power_consumption_data_per_container.py                                     This is the script used to parse prometheus Power Consumption data and segeregate it, and save it into csvs per container
+    |--- ./bookstore/buy_books/scripts/transform_measured_utilization_data/perform_kw_test_per_container.py                                                This is the script used to per KW test on per container CPU Utilization data
+    |--- ./bookstore/buy_books/scripts/transform_measured_utilization_data/perform_kw_test_per_container_power_consumption.py                              This is the script used to per KW test on per container power consumption data
+    |--- ./bookstore/buy_books/scripts/comparison_scripts/cpu_utilization_comparison/cpu_utilization_comparision_per_container.py                          Script used to generate per container comparison plots (actual vs estimated)
+    |--- ./bookstore/buy_books/scripts/comparison_scripts/cpu_utilization_comparison/server_cpu_utilization_comparison.py                                  Script used to generate per server level comparison plots (actual vs estimated) before ctmc refinement is applied
+    |--- ./bookstore/buy_books/scripts/comparison_scripts/cpu_utilization_comparison/get_server_comparison_plots_after_ctmc_refinement.py                  Script used to generate per server level comparison plots (actual vs estimated) after ctmc refinement is applied
+    |--- ./bookstore/buy_books/scripts/comparison_scripts/power_consumption_comparison/                                                                    Contains scripts to generate per container and per server comparison plots (actual vs estimated)
 ```
 
 ### Abstract Representation of a single server within the Performance Model
