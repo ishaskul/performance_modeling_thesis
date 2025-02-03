@@ -55,5 +55,30 @@ This replication package is structured as follows:
     |--- ./buy_books/buy_books/model-config.json                                            follow users scenarin configuration file which is directly used in the performance model
 ```
 
+### Overview of measured data is structured
+This replication package is structured as follows:
+
+```
+    /
+    .
+    |--- ./bookstore/buy_books/buy_books_final/                                                Measured data against which the model is validated for social-network application with data for all iterations 1-10
+    |--- ./bookstore/buy_books/buy_books/buy_books_final/1                                     Measured data for the 1st iteration
+    |--- ./bookstore/buy_books/buy_books/buy_books_final/1/system_cpu_data                     Contains measured CPU utilization data per container, per server
+    |--- ./bookstore/buy_books/buy_books/buy_books_final/1/power_consumption_data              Contains measured power consumption data per container, per server
+    |--- ./bookstore/buy_books/buy_books/buy_books_final/transformed_data_kw_test/             Contains per server (GL2, GL5, GL6) measured data that is transformed from prometheus jsons to CSVs, and it contains KW test results csvs
+
+    |--- ./social-network/compose_posts/compose_posts                                           Measured data against which the model is validated for social-network application with data for all iterations 1-10
+    |--- ./social-network/compose_posts/compose_posts/1                                         Measured data for the 1st iteration
+    |--- ./social-network/compose_posts/compose_posts/1/system_cpu_data                         Contains measured CPU utilization data per container, per server
+    |--- ./social-network/compose_posts/compose_posts/1/power_consumption_data                  Contains measured power consumption data per container, per server
+    |--- ./social-network/compose_posts/compose_posts/transformed_data_kw_test/                 Contains per server (GL2, GL5, GL6) measured data that is transformed from prometheus jsons to CSVs, and it contains KW test results csvs
+
+    |--- ./social-network/follow_users/follow_users_final_run                                   Measured data against which the model is validated for social-network application with data for all iterations 1-10
+    |--- ./social-network/follow_users/follow_users_final_run/1                                 Measured data for the 1st iteration
+    |--- ./social-network/follow_users/follow_users_final_run/1/system_cpu_data                 Contains measured CPU utilization data per container, per server
+    |--- ./social-network/follow_users/follow_users_final_run/1/power_consumption_data          Contains measured power consumption data per container, per server
+    |--- ./social-network/follow_users/follow_users_final_run/transformed_data_kw_test/         Contains per server (GL2, GL5, GL6) measured data that is transformed from prometheus jsons to CSVs, and it contains KW test results csvs
+```
+
 ### Abstract Representation of a single server within the Performance Model
 ![Alt text](./images/performance_mode_abstraction.jpg)
