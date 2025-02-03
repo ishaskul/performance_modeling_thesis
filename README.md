@@ -53,7 +53,7 @@ This replication package is structured as follows:
     |--- ./social-network/compose_posts/model-config.json                                           Compost posts scenarin configuration file which is directly used in the performance model
     |--- ./social-network/follow_users/model-config.json                                            follow users scenarin configuration file which is directly used in the performance model  
     |--- ./buy_books/buy_books/model-config.json                                            follow users scenarin configuration file which is directly used in the performance model
-
+```
 
 ### Abstract Representation of a single server within the Performance Model
 ![Alt text](./images/performance_mode_abstraction.jpg)
