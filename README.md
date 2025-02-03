@@ -82,8 +82,8 @@ This replication package is structured as follows:
 
 Note : This same struture is followed for the social network app as well
 
-./social-network/compose_posts/scripts
-./social-network/follow_users/scripts
+- ./social-network/compose_posts/scripts
+- ./social-network/follow_users/scripts
 
 ```
     /
