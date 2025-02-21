@@ -288,7 +288,7 @@ def estimate_power_consumption_over_all_servers_over_time(estimated_cpu_data_dir
         df = pd.read_csv(server_cpu_utilization_file)
         p_idle = containers_config[server]['p_idle']
         p_max = containers_config[server]['p_max']
-        if (scenario_name in ['follow_users','buy_books'] and server in ['gl5','gl6']):
+        if (scenario_name in ['follow_users','buy_books','compose_posts'] and server in ['gl5','gl6']):
             print("In non-linear")
             alpha = containers_config[server]['alpha']
             beta = containers_config[server]['beta']
