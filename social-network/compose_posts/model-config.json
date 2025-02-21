@@ -303,8 +303,10 @@
       }
     },
     "gl6": {
-      "p_idle":34.5,
+      "p_idle":23.5,
       "p_max":115.6,
+      "alpha":5,
+      "beta":1.2,
       "ctmc_transition_matrix": [
         [0.85, 0.1, 0.03, 0.02],
         [0.2, 0.75, 0.03, 0.02],
@@ -312,10 +314,10 @@
         [0.1, 0.15, 0.2, 0.55] 
     ],
     "ctmc_service_time_overhead_ranges": [
-      [-0.3, -0.5],
-      [-0.6, -1],
-      [-1, -1.5],
-      [-2.0, -2.2]
+      [0.3, 0.5],
+      [0.6, 1],
+      [1, 1.5],
+      [2.0, 2.2]
     ],
     "duration": 495, 
     "idle_time": 30, 
@@ -330,8 +332,8 @@
         "idle_time": 90,
         "ramp_up_duration": 280,
         "burst_duration": 30,
-        "burst_arrival_rate": 1.9,
-        "steady_arrival_rate": 1.9,
+        "burst_arrival_rate": 105.55, 
+        "steady_arrival_rate": 105.55,
         "service_time_range": [0.5, 0.7],
         "max_service_time_variation":0.5,
         "num_cores": 32,
